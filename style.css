@@ -354,8 +354,41 @@ header .main_menu ul {
     flex-direction: column;
   }
 
+  .input-text,
+  .input-email {
+    height: 45px;
+    width: 100%;
+  }
+
   .inputConIcon {
     width: 100%;
+  }
+
+  .inputConIcon i {
+    display: flex;
+    align-items: center;
+    height: 40%;
+    left: 0;
+    padding: 14px 15px;
+    background: #888;
+    color: #fff;
+    transition: all 0.5s;
+  }
+
+  .textareaIcon i {
+    position: absolute;
+    background: transparent;
+    color: #888;
+    font-size: 25px;
+    left: 60px;
+    top: 210px;
+    transition: all 0.5s;
+  }
+
+  .fiels-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   /* alertas */
