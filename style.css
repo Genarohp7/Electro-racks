@@ -8,6 +8,8 @@
   src: url("./libreria/OpenSans.ttf");
 }
 
+@import "compass/css3";
+
 :root {
   ---color-main: #009649;
   ---color-back: #f4e72f;
@@ -126,6 +128,238 @@
 }
 
 /* sections  */
+/* seccion nosotros */
+.nosotros {
+  width: 100%;
+  height: 600px;
+}
+.fondo {
+  margin: 0;
+  width: 100%;
+  height: 10vh;
+}
+
+.nosotros .textUs {
+  width: 95%;
+  height: 100%;
+  margin-left: 30px;
+  position: relative;
+  top: -50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gridUs {
+  width: 100%;
+  height: 80%;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "honestidad  valores  pasion"
+    "honestidad  valores  pasion"
+    "orientacion valores  transparencia";
+}
+
+.gridUs .valores {
+  grid-area: valores;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: var(---text-second);
+  font-size: 35px;
+}
+
+.gridUs .honestidad {
+  grid-area: honestidad;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  top: 75px;
+  left: 20px;
+}
+
+.top {
+  text-transform: uppercase;
+}
+
+.textBoxV {
+  width: 100%;
+  height: 25%;
+  text-align: center;
+  padding: 5px;
+  transition: all 0.1s;
+  opacity: 0;
+}
+
+.honestidad:hover .textBoxV {
+  opacity: 1;
+  transition-delay: all 0.1s;
+}
+
+.gridUs .pasion {
+  grid-area: pasion;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  top: 75px;
+  right: 10px;
+}
+
+.pasion:hover .textBoxV {
+  opacity: 1;
+  transition-delay: all 0.1s;
+}
+
+.gridUs .orientacion {
+  grid-area: orientacion;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  top: 75px;
+  left: 20px;
+}
+
+.orientacion:hover .textBoxV {
+  opacity: 1;
+  transition-delay: all 0.1s;
+}
+
+.gridUs .transparencia {
+  grid-area: transparencia;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  top: 75px;
+  right: 10px;
+}
+
+.transparencia:hover .textBoxV {
+  opacity: 1;
+  transition-delay: all 0.1s;
+}
+
+.row {
+  background: var(---color-main);
+  height: 10vh;
+  width: 100%;
+  animation: fade 5s infinite;
+  animation-direction: alternate;
+}
+.row-1 {
+}
+.row-2 {
+  animation-delay: 0.5s;
+}
+.row-3 {
+  animation-delay: 1s;
+}
+.row-4 {
+  animation-delay: 1.5s;
+}
+.row-5 {
+  animation-delay: 2s;
+}
+.row-6 {
+  animation-delay: 2.5s;
+}
+.row-7 {
+  animation-delay: 3s;
+}
+.row-8 {
+  animation-delay: 3.5s;
+}
+
+.row-9 {
+  animation-delay: 4s;
+}
+.row-10 {
+  animation-delay: 4.5s;
+}
+
+@keyframes fade {
+  from {
+    background: var(---color-main);
+  }
+  to {
+    background: var(---color-back);
+  }
+}
+/* servicios */
+
+.servicios {
+  width: 100%;
+  height: 550px;
+  display: flex;
+}
+
+.servicio {
+  flex-grow: 1;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s;
+}
+.servicio-imagen {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: grayscale(80%);
+}
+
+.servicio:hover {
+  flex-grow: 3;
+}
+
+.servicio:hover .servicio-imagen {
+  filter: grayscale(0%);
+}
+
+.servicio-info {
+  background-color: rgb(234, 234, 234);
+  position: relative;
+  left: 10px;
+  top: 350px;
+  width: 95%;
+  text-align: center;
+  transition: all 0.1s;
+  opacity: 0;
+  border-radius: 10%;
+}
+
+.servicio:hover .servicio-info {
+  opacity: 1;
+  bottom: 60px;
+  transition: all 0.3s;
+}
+
+.servicio-info h2 {
+  font-size: 30px;
+  color: #000;
+  font-weight: 600;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.servicio-info p {
+  color: var(--color-secundario);
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 3px rgba(255, 0, 0, 0.438);
+}
 
 /* footer */
 footer {
@@ -343,6 +577,129 @@ header .main_menu ul {
   .menu-bar .sociales a:hover {
     color: var(---color-main);
     transform: scale(2.5);
+  }
+
+  /* secciones  */
+  /* seccion nosotros  */
+
+  .nosotros {
+    width: 100%;
+    height: 600px;
+  }
+
+  .fondo {
+    margin: 0;
+    width: 100%;
+    height: 5vh;
+  }
+
+  .nosotros .textUs {
+    width: 95%;
+    height: 25%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .gridUs {
+    width: 100%;
+    height: 80%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "honestidad  valores  pasion"
+      "honestidad  valores  pasion"
+      "orientacion valores  transparencia";
+  }
+
+  .gridUs .valores {
+    grid-area: valores;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: var(---text-second);
+    font-size: 15px;
+  }
+
+  .gridUs .honestidad {
+    grid-area: honestidad;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    left: 20px;
+  }
+
+  .top {
+    text-transform: uppercase;
+  }
+
+  .textBoxV {
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    padding: 5px;
+    transition: all 0.1s;
+    opacity: 0;
+  }
+
+  .honestidad:hover .textBoxV {
+    opacity: 1;
+    transition-delay: all 0.1s;
+  }
+
+  .gridUs .pasion {
+    grid-area: pasion;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    top: 75px;
+    right: 10px;
+  }
+
+  .pasion:hover .textBoxV {
+    opacity: 1;
+    transition-delay: all 0.1s;
+  }
+
+  .gridUs .orientacion {
+    grid-area: orientacion;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    top: 75px;
+    left: 20px;
+  }
+
+  .orientacion:hover .textBoxV {
+    opacity: 1;
+    transition-delay: all 0.1s;
+  }
+
+  .gridUs .transparencia {
+    grid-area: transparencia;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    top: 75px;
+    right: 10px;
+  }
+
+  .transparencia:hover .textBoxV {
+    opacity: 1;
+    transition-delay: all 0.1s;
   }
 
   /* contacto  */
