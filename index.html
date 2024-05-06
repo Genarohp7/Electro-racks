@@ -1,210 +1,849 @@
 <!DOCTYPE html>
 <html lang="es">
-  <html lang="es">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Electro-racks</title>
-      <link
-        rel="stylesheet"
-        href="./libreria/fontawesome-free-6.4.2-web/css/all.min.css"
-      />
-      <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-      <!-- Boton de ir arriba -->
-      <div id="btn-top">
-        <span class="fas fa-angle-double-up"></span>
-      </div>
-
-      <!-- Menu principal  -->
-      <div class="menu-principal">
-        <div class="logo" id="logo">
-          <img src="./img/electroracks-colores-png-reducido.png" alt="logo" />
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Electro Racks</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="./css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style1.css" />
+  </head>
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav
+      class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
+      id="mainNav"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#page-top"
+          ><img src="" alt="" /><img
+            src="./assets/electroracks-colores-png-reducido.png"
+            alt=""
+        /></a>
+        <button
+          class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio"
+                >Servicios</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about"
+                >Quienes somos</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact"
+                >Donde encontrarnos
+              </a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="social py-3 px-0 px-lg-3 rounded" href="#portfolio"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="social py-3 px-0 px-lg-3 rounded" href="#portfolio"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+            </li>
+          </ul>
         </div>
-        <div class="menu-bar" id="menuBar">
-          <i class="fas fa-angle-right" id="btnMenuClose"></i>
-          <nav class="enlaces" id="enlaces">
-            <ul>
-              <li><a href="#servicios">Nosotros</a></li>
-              <li><a href="#equipo">Servicios </a></li>
-              <li><a href="#contacto">Clientes</a></li>
-              <li><a href="#contacto">Contacto</a></li>
-            </ul>
-          </nav>
-
-          <div class="sociales">
-            <a href="#"><span class="fab fa-facebook"></span></a>
-            <a href="#"><span class="fab fa-instagram"></span></a>
-            <a href="#"><span class="fab fa-twitter"></span></a>
-            <a href="#"><span class="fab fa-youtube"></span></a>
+      </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead bg-primary text-white text-center">
+      <div class="container d-flex align-items-center flex-column">
+        <!-- Masthead Avatar Image-->
+        <img
+          class="masthead-avatar mb-5"
+          src="assets/img/avataaars.svg"
+          alt="..."
+        />
+        <!-- Masthead Heading-->
+        <h1 class="masthead-heading text-uppercase mb-0">
+          lugar de carrete de Imagenes
+        </h1>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+          <div class="divider-custom-line"></div>
+        </div>
+        <!-- Masthead Subheading-->
+      </div>
+    </header>
+    <!-- Portfolio Section-->
+    <section class="page-section portfolio" id="portfolio">
+      <div class="container">
+        <!-- Portfolio Section Heading-->
+        <h2
+          class="page-section-heading text-center text-uppercase text-secondary mb-0"
+        >
+          Servicios
+        </h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+          <div class="divider-custom-line"></div>
+        </div>
+        <!-- Portfolio Grid Items-->
+        <div class="row justify-content-center">
+          <!-- Portfolio Item 1-->
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div
+              class="portfolio-item mx-auto"
+              data-bs-toggle="modal"
+              data-bs-target="#portfolioModal1"
+            >
+              <div
+                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="portfolio-item-caption-content text-center text-white"
+                >
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img
+                class="img-fluid"
+                src="assets/img/portfolio/foto1.jpg"
+                alt="..."
+              />
+            </div>
+          </div>
+          <!-- Portfolio Item 2-->
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div
+              class="portfolio-item mx-auto"
+              data-bs-toggle="modal"
+              data-bs-target="#portfolioModal2"
+            >
+              <div
+                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="portfolio-item-caption-content text-center text-white"
+                >
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img
+                class="img-fluid"
+                src="./assets/img/portfolio/foto2.jpg"
+                alt="..."
+              />
+            </div>
+          </div>
+          <!-- Portfolio Item 3-->
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div
+              class="portfolio-item mx-auto"
+              data-bs-toggle="modal"
+              data-bs-target="#portfolioModal3"
+            >
+              <div
+                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="portfolio-item-caption-content text-center text-white"
+                >
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img
+                class="img-fluid"
+                src="./assets/img/portfolio/foto3.jpg"
+                alt="..."
+              />
+            </div>
+          </div>
+          <!-- Portfolio Item 4-->
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+            <div
+              class="portfolio-item mx-auto"
+              data-bs-toggle="modal"
+              data-bs-target="#portfolioModal4"
+            >
+              <div
+                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="portfolio-item-caption-content text-center text-white"
+                >
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img
+                class="img-fluid"
+                src="./assets/img/portfolio/foto4.jpg"
+                alt="..."
+              />
+            </div>
+          </div>
+          <!-- Portfolio Item 5-->
+          <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+            <div
+              class="portfolio-item mx-auto"
+              data-bs-toggle="modal"
+              data-bs-target="#portfolioModal5"
+            >
+              <div
+                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="portfolio-item-caption-content text-center text-white"
+                >
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img
+                class="img-fluid"
+                src="./assets/img/portfolio/foto5.jpg"
+                alt="..."
+              />
+            </div>
+          </div>
+          <!-- Portfolio Item 6-->
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="portfolio-item mx-auto"
+              data-bs-toggle="modal"
+              data-bs-target="#portfolioModal6"
+            >
+              <div
+                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="portfolio-item-caption-content text-center text-white"
+                >
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img
+                class="img-fluid"
+                src="./assets/img/portfolio/foto6.jpg"
+                alt="..."
+              />
+            </div>
           </div>
         </div>
-        <i class="fas fa-bars" id="btnMenuOpen"></i>
       </div>
-      <!-- seccion nosotros -->
-      <div class="nosotros">
-        <section class="fondo">
-          <div class="row-1 row"></div>
-          <div class="row-2 row"></div>
-          <div class="row-3 row"></div>
-          <div class="row-4 row"></div>
-          <div class="row-5 row"></div>
-          <div class="row-6 row"></div>
-          <div class="row-7 row"></div>
-          <div class="row-8 row"></div>
-          <div class="row-9 row"></div>
-          <div class="row-10 row"></div>
-        </section>
-        <section class="textUs">
-          <h1 class="titulos">Quienes Somos</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
-            maxime corrupti voluptatem ad culpa officiis necessitatibus
-            voluptates veritatis sit! Ut explicabo quam magnam minus quod
-            laborum qui aliquid! Mollitia, necessitatibus.
-          </p>
-          <div class="gridUs">
-            <h2 class="valores">valores</h2>
-            <div class="honestidad">
-              <h3 class="top">honestidad</h3>
-              <div class="textBoxV">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dignissimos dicta libero sit accusantium! Commodi eveniet,
-                  aliquid odit architecto, autem, eum quae voluptatum maiores
-                  eaque esse quod et enim dolorum quos?
-                </p>
-              </div>
-            </div>
-            <div class="pasion">
-              <h3 class="top">pasion</h3>
-              <div class="textBoxV">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Alias, ipsam! Laboriosam ipsa sapiente assumenda ab explicabo
-                  ipsam, ex quaerat id nemo necessitatibus temporibus esse.
-                  Deleniti sequi repellat eligendi est perferendis.
-                </p>
-              </div>
-            </div>
-            <div class="orientacion">
-              <h3 class="top">orientacion</h3>
-              <div class="textBoxV">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Alias, ipsam! Laboriosam ipsa sapiente assumenda ab explicabo
-                  ipsam, ex quaerat id nemo necessitatibus temporibus esse.
-                  Deleniti sequi repellat eligendi est perferendis.
-                </p>
-              </div>
-            </div>
-            <div class="transparencia">
-              <h3 class="top">transparencia</h3>
-              <div class="textBoxV">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Alias, ipsam! Laboriosam ipsa sapiente assumenda ab explicabo
-                  ipsam, ex quaerat id nemo necessitatibus temporibus esse.
-                  Deleniti sequi repellat eligendi est perferendis.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-      <!-- servicios -->
-      <div class="servicios">
-        <div class="servicio">
-          <img src="./img/img1.jpg" alt="" class="servicio-imagen" />
-          <div class="servicio-info">
-            <h2>Algo</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-              inventore nostrum voluptates molestias sit, ad officia nulla
-              perferendis eveniet quaerat possimus in eum mollitia ducimus
-              praesentium omnis temporibus aperiam minima.
+    </section>
+    <!-- About Section-->
+    <section class="page-section bg-primary text-white mb-0" id="about">
+      <div class="container">
+        <!-- About Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-white">
+          Quienes somos
+        </h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+          <div class="divider-custom-line"></div>
+        </div>
+        <!-- About Section Content-->
+        <div class="row">
+          <div class=" ms-auto">
+            <p class="lead">
+              Somos una organización 100% mexicana dedicada al diseño,
+              ingeniería, consultoría, fabricación y reparación de herramentales
+              utilizados en los diferentes procesos de galvanoplastia de metales
+              y plásticos. Contamos con varios años de experiencia que nos
+              respaldan en el mercado, dando soporte y contribuyendo al éxito de
+              la industria de acabados superficiales.
             </p>
           </div>
         </div>
-        <div class="servicio">
-          <img src="./img/img2.jpg" alt="" class="servicio-imagen" />
-          <div class="servicio-info">
-            <h2>Algo</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-              inventore nostrum voluptates molestias sit, ad officia nulla
-              perferendis eveniet quaerat possimus in eum mollitia ducimus
-              praesentium omnis temporibus aperiam minima.
-            </p>
-          </div>
-        </div>
-        <div class="servicio">
-          <img src="./img/img3.jpg" alt="" class="servicio-imagen" />
-          <div class="servicio-info">
-            <h2>Algo</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-              inventore nostrum voluptates molestias sit, ad officia nulla
-              perferendis eveniet quaerat possimus in eum mollitia ducimus
-              praesentium omnis temporibus aperiam minima.
-            </p>
-          </div>
+        <!-- About Section Button-->
+       
         </div>
       </div>
-      <!-- Seccion contacto -->
-      <footer>
-        <div class="form" id="contacto">
-          <div class="titulo-contacto">
-            <h2 class="subtitulos">Queremos conocer tu opinion</h2>
-            <h1 class="titulos">Contactanos</h1>
-          </div>
-
-          <form action="" id="formulario">
-            <div class="two-fiels">
-              <div class="inputConIcon">
+    </section>
+    <!-- Contact Section-->
+    <section class="page-section" id="contact">
+      <div class="container">
+        <!-- Contact Section Heading-->
+        <h2
+          class="page-section-heading text-center text-uppercase text-secondary mb-0"
+        >
+          Contacto
+        </h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+          <div class="divider-custom-line"></div>
+        </div>
+        <!-- Contact Section Form-->
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-xl-7">
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- * * SB Forms Contact Form * *-->
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- This form is pre-integrated with SB Forms.-->
+            <!-- To make this form functional, sign up at-->
+            <!-- https://startbootstrap.com/solution/contact-forms-->
+            <!-- to get an API token!-->
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+              <!-- Name input-->
+              <div class="form-floating mb-3">
                 <input
+                  class="form-control"
+                  id="name"
                   type="text"
-                  id="nombre"
-                  name="nombre"
-                  class="input-text"
-                  placeholder="Nombre"
+                  placeholder="Enter your name..."
+                  data-sb-validations="required"
                 />
-                <i class="fas fa-user"></i>
+                <label for="name">Nombre Completo</label>
+                <div class="invalid-feedback" data-sb-feedback="name:required">
+                  Se requiere un nombre.
+                </div>
               </div>
-
-              <div class="inputConIcon">
+              <!-- Email address input-->
+              <div class="form-floating mb-3">
                 <input
-                  type="email"
+                  class="form-control"
                   id="email"
-                  name="email"
-                  class="input-email"
-                  placeholder="Email"
+                  type="email"
+                  placeholder="name@example.com"
+                  data-sb-validations="required,email"
                 />
-                <i class="fas fa-envelope"></i>
+                <label for="email">Email</label>
+                <div class="invalid-feedback" data-sb-feedback="email:required">
+                  Se requiere un email.
+                </div>
+                <div class="invalid-feedback" data-sb-feedback="email:email">
+                  Email is not valid.
+                </div>
               </div>
-            </div>
-
-            <div class="fiels">
-              <div class="inputConIcon textareaIcon">
+              <!-- Phone number input-->
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  id="phone"
+                  type="tel"
+                  placeholder="(123) 456-7890"
+                  data-sb-validations="required"
+                />
+                <label for="phone">Telefono</label>
+                <div class="invalid-feedback" data-sb-feedback="phone:required">
+                  Se requiere un telefono.
+                </div>
+              </div>
+              <!-- Message input-->
+              <div class="form-floating mb-3">
                 <textarea
-                  name="comentarios"
-                  id="comentarios"
-                  class="textarea"
-                  placeholder="Ingrese su mensaje "
+                  class="form-control"
+                  id="message"
+                  type="text"
+                  placeholder="Enter your message here..."
+                  style="height: 10rem"
+                  data-sb-validations="required"
                 ></textarea>
-                <i class="fas fa-comments"></i>
+                <label for="message">Mensaje</label>
+                <div
+                  class="invalid-feedback"
+                  data-sb-feedback="message:required"
+                >
+                  Se requiere llenar este campo.
+                </div>
+              </div>
+              <!-- Submit success message-->
+              <!---->
+              <!-- This is what your users will see when the form-->
+              <!-- has successfully submitted-->
+              <div class="d-none" id="submitSuccessMessage">
+                <div class="text-center mb-3">
+                  <div class="fw-bolder">Form submission successful!</div>
+                  To activate this form, sign up at
+                  <br />
+                  <a href="#"
+                     >
+                </div>
+              </div>
+              <!-- Submit error message-->
+              <!---->
+              <!-- This is what your users will see when there is-->
+              <!-- an error submitting the form-->
+              <div class="d-none" id="submitErrorMessage">
+                <div class="text-center text-danger mb-3">
+                  Error sending message!
+                </div>
+              </div>
+              <!-- Submit Button-->
+              <button
+                class="btn btn-primary btn-xl disabled"
+                id="submitButton"
+                type="submit"
+              >
+               Enviar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="row">
+          <!-- Footer Location-->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Direccion</h4>
+            <p class="lead mb-0">
+              <a href="https://www.google.com/maps/place/Calz+Coltongo+49,+Coltongo,+Azcapotzalco,+02630+Ciudad+de+M%C3%A9xico,+CDMX/@19.4801961,-99.1496799,17z/data=!3m1!4b1!4m6!3m5!1s0x85d1f8558d2565d9:0x4c9ed0c38c5c548a!8m2!3d19.4801961!4d-99.1496799!16s%2Fg%2F11ckqrql8f?entry=ttu">Calzada coltongo #49
+                Col. Trabajadores del Hierro
+                Azcapotzalco, CDMX, C.P. 02630
+                </a>
+             
+              
+            </p>
+          </div>
+          <!-- Footer Social Icons-->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Redes sociales</h4>
+            <a class="btn btn-outline-light btn-social mx-1" href="#!"
+              ><i class="fab fa-fw fa-facebook-f"></i
+            ></a>
+            <a class="btn btn-outline-light btn-social mx-1" href="#!"
+              ><i class="fab fa-fw fa-twitter"></i
+            ></a>
+            <!-- <a class="btn btn-outline-light btn-social mx-1" href="#!"
+              ><i class="fab fa-fw fa-linkedin-in"></i
+            ></a>
+            <a class="btn btn-outline-light btn-social mx-1" href="#!"
+              ><i class="fab fa-fw fa-dribbble"></i
+            ></a> -->
+          </div>
+          <!-- Footer About Text-->
+          <div class="col-lg-4">
+            <h4 class="text-uppercase mb-4">Datos de contacto</h4>
+            <p class="lead mb-0">
+            Telefono: 555-55-55
+            <br>
+            <br>
+            correo: electrorecks@info.com
+           
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Copyright Section-->
+   
+    <!-- Portfolio Modals-->
+    <!-- Portfolio Modal 1-->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal1"
+      tabindex="-1"
+      aria-labelledby="portfolioModal1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              class="btn-close"
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center pb-5">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title-->
+                  <h2
+                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                  >
+                    Servicio 1
+                  </h2>
+                  <!-- Icon Divider-->
+                  <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                  </div>
+                  <!-- Portfolio Modal - Image-->
+                  <img
+                    class="img-fluid rounded mb-5"
+                    src="assets/img/portfolio/foto1.jpg"
+                    alt="..."
+                  />
+                  <!-- Portfolio Modal - Text-->
+                  <p class="mb-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Mollitia neque assumenda ipsam nihil, molestias magnam,
+                    recusandae quos quis inventore quisquam velit asperiores,
+                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
+                    Nam.
+                  </p>
+                  <button class="btn btn-primary" data-bs-dismiss="modal">
+                    <i class="fas fa-xmark fa-fw"></i>
+                    Cerrar
+                  </button>
+                </div>
               </div>
             </div>
-
-            <div class="fiels-btn">
-              <input type="submit" class="btn btn-input" value="Enviar" />
-            </div>
-          </form>
+          </div>
         </div>
-        <div class="contact"></div>
-      </footer>
-      <script src="./script.js"></script>
-    </body>
-  </html>
+      </div>
+    </div>
+    <!-- Portfolio Modal 2-->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal2"
+      tabindex="-1"
+      aria-labelledby="portfolioModal2"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              class="btn-close"
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center pb-5">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title-->
+                  <h2
+                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                  >
+                    Servicio 2
+                  </h2>
+                  <!-- Icon Divider-->
+                  <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                  </div>
+                  <!-- Portfolio Modal - Image-->
+                  <img
+                    class="img-fluid rounded mb-5"
+                    src="./assets/img/portfolio/foto2.jpg"
+                    alt="..."
+                  />
+                  <!-- Portfolio Modal - Text-->
+                  <p class="mb-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Mollitia neque assumenda ipsam nihil, molestias magnam,
+                    recusandae quos quis inventore quisquam velit asperiores,
+                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
+                    Nam.
+                  </p>
+                  <button class="btn btn-primary" data-bs-dismiss="modal">
+                    <i class="fas fa-xmark fa-fw"></i>
+                    Cerrar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal 3-->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal3"
+      tabindex="-1"
+      aria-labelledby="portfolioModal3"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              class="btn-close"
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center pb-5">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title-->
+                  <h2
+                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                  >
+                    Servicio 3
+                  </h2>
+                  <!-- Icon Divider-->
+                  <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                  </div>
+                  <!-- Portfolio Modal - Image-->
+                  <img
+                    class="img-fluid rounded mb-5"
+                    src="./assets/img/portfolio/foto3.jpg"
+                    alt="..."
+                  />
+                  <!-- Portfolio Modal - Text-->
+                  <p class="mb-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Mollitia neque assumenda ipsam nihil, molestias magnam,
+                    recusandae quos quis inventore quisquam velit asperiores,
+                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
+                    Nam.
+                  </p>
+                  <button class="btn btn-primary" data-bs-dismiss="modal">
+                    <i class="fas fa-xmark fa-fw"></i>
+                    Cerrar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal 4-->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal4"
+      tabindex="-1"
+      aria-labelledby="portfolioModal4"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              class="btn-close"
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center pb-5">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title-->
+                  <h2
+                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                  >
+                  Servicio 4 
+                  </h2>
+                  <!-- Icon Divider-->
+                  <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                  </div>
+                  <!-- Portfolio Modal - Image-->
+                  <img
+                    class="img-fluid rounded mb-5"
+                    src="./assets/img/portfolio/foto4.jpg"
+                    alt="..."
+                  />
+                  <!-- Portfolio Modal - Text-->
+                  <p class="mb-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Mollitia neque assumenda ipsam nihil, molestias magnam,
+                    recusandae quos quis inventore quisquam velit asperiores,
+                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
+                    Nam.
+                  </p>
+                  <button class="btn btn-primary" data-bs-dismiss="modal">
+                    <i class="fas fa-xmark fa-fw"></i>
+                    Cerrar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal 5-->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal5"
+      tabindex="-1"
+      aria-labelledby="portfolioModal5"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              class="btn-close"
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center pb-5">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title-->
+                  <h2
+                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                  >
+                    Servicio 5
+                  </h2>
+                  <!-- Icon Divider-->
+                  <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                  </div>
+                  <!-- Portfolio Modal - Image-->
+                  <img
+                    class="img-fluid rounded mb-5"
+                    src="./assets/img/portfolio/foto5.jpg"
+                    alt="..."
+                  />
+                  <!-- Portfolio Modal - Text-->
+                  <p class="mb-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Mollitia neque assumenda ipsam nihil, molestias magnam,
+                    recusandae quos quis inventore quisquam velit asperiores,
+                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
+                    Nam.
+                  </p>
+                  <button class="btn btn-primary" data-bs-dismiss="modal">
+                    <i class="fas fa-xmark fa-fw"></i>
+                    Cerrar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal 6-->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal6"
+      tabindex="-1"
+      aria-labelledby="portfolioModal6"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              class="btn-close"
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center pb-5">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title-->
+                  <h2
+                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                  >
+                   Servicio 6 
+                  </h2>
+                  <!-- Icon Divider-->
+                  <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                  </div>
+                  <!-- Portfolio Modal - Image-->
+                  <img
+                    class="img-fluid rounded mb-5"
+                    src="./assets/img/portfolio/foto6.jpg"
+                    alt="..."
+                  />
+                  <!-- Portfolio Modal - Text-->
+                  <p class="mb-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Mollitia neque assumenda ipsam nihil, molestias magnam,
+                    recusandae quos quis inventore quisquam velit asperiores,
+                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
+                    Nam.
+                  </p>
+                  <button class="btn btn-primary" data-bs-dismiss="modal">
+                    <i class="fas fa-xmark fa-fw"></i>
+                    Cerrar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+  </body>
 </html>

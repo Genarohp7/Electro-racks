@@ -1,0 +1,42 @@
+.navbar img {
+  width: 15vw;
+  position: relative;
+  right: 15rem;
+}
+
+.navbar .social {
+  font-size: 1.5rem;
+  position: relative;
+  top: 15%;
+  left: 100%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .navbar img {
+    width: 30vw;
+    position: relative;
+    right: 7rem;
+  }
+
+  .navbar .social {
+    font-size: 1.5rem;
+    position: relative;
+    top: 15%;
+    left: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 980px) {
+  .navbar img {
+    width: 25vw;
+    position: relative;
+    right: 15rem;
+  }
+
+  .navbar .social {
+    font-size: 1.5rem;
+    position: relative;
+    top: 15%;
+    left: 0.5rem;
+  }
+}
