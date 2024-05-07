@@ -1,7 +1,7 @@
 .navbar img {
   width: 15vw;
   position: relative;
-  right: 15rem;
+  right: 1rem;
 }
 
 .navbar .social {
@@ -15,7 +15,7 @@
   .navbar img {
     width: 30vw;
     position: relative;
-    right: 7rem;
+    right: 0.1rem;
   }
 
   .navbar .social {
@@ -30,7 +30,7 @@
   .navbar img {
     width: 25vw;
     position: relative;
-    right: 15rem;
+    right: 1rem;
   }
 
   .navbar .social {
